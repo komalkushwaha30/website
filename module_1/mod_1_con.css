@@ -1,0 +1,21 @@
+.module1{
+    background-color: lightgrey;
+    background-size: cover;
+    height: 800vh;
+    color: black;
+    font-family:cursive;
+
+}
+.youtube-radius{
+    margin-top: 3%;
+}
+.radius{
+    border-radius: 10px;
+}
+.topic_content{
+    background-color: rgb(181, 179, 227);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 20px;
+}

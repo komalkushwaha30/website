@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 60 px;
+
+}
+.nav-color {
+  background-color: rgb(221, 221, 226);
+}
+.text-weight {
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.backgroundimg {
+  background-image: url(https://img.freepik.com/premium-photo/schoolgirls-little-children-school-yard-with-books-interesting-reading-concept_474717-149977.jpg?w=900);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.icon-color {
+  color: rgb(224, 76, 18);
+}
+.nav-item .dropdown:hover {
+  background-color: #ffffff;
+  color: #0f1111;
+}
+.content_heading {
+  font-size: 18px;
+  margin-left: 70px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+
+/* OUR INITIATIVE */
+.our-initiative {
+  /* background-image: linear-gradient(#ffffff,rgb(90, 116, 143), rgb(59, 80, 103), rgb(34, 47, 61)); */
+  background-color: #99a4b2;
+  background-size: cover;
+  width: 100vw;
+  margin-top: 0px;
+  margin: 0;
+
+}
+.our-initiative-heading {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 45px;
+}
+.our-initiative p {
+  font-size: 20px;
+}
+.our-initiative h5{
+  font-size: 30px;
+  font-weight: bold;
+}
+.school-border {
+  border-radius: 8px;
+  margin-bottom: 8%;
+  margin-left: 8%;
+}
+.school-margin {
+  margin-left: 8%;
+  font-family: "Roboto";
+}
+.foot-panel1 {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.foot-panel2 {
+  background-color: #222f3d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  margin-top: 20px;
+}
+ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 15px;
+  color: #dddddd;
+}
+.foot-panel3 {
+  background-color: #222f3d;
+  color: white;
+  border-top: 0.5px solid white;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-panel4 {
+  background-color: #0f1111;
+  color: white;
+  height: 150px;
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: "Roboto";
+}
+.pages {
+  padding-top: 25px;
+  font-size: 20px;
+}
+.copyright {
+  padding-top: 5px;
+}
+
+

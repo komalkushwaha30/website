@@ -1,0 +1,46 @@
+.module3{
+    background-color: #eed5df;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-family:cursive;
+
+
+}
+.module3 h1{
+    color: black;
+}
+.youtube-module3{
+    margin-top: 3%;
+    
+}
+.module3b-border{
+    border-radius: 8px;
+    margin-left: 3%;
+}
+.module3-color{
+    color: blue;
+}
+.module-flex{
+    display: flex;
+}
+.module3 h6{
+    font-weight:bold;
+    color:rgb(96, 23, 10);
+}
+.module3 h5{
+    color: rgb(11, 11, 27);
+    font-weight: bold;
+    font-size: 28px;
+}
+.module3 p{
+    color: rgb(37, 21, 74);
+}
+.topic_content{
+    background-color: rgb(181, 179, 227);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 20px;
+}

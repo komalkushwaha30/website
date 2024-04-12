@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="module_6b.css">
+    <title>Module_6B</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="heading">Module 6B - Database</h1>
+
+        <div class="first">
+            <div class="box-container">
+                <div class="box">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <h5>1. Database Management System</h5>
+                    <button><a href="#" class="btn">Learn More</a></button>
+                </div>
+            </div>
+
+            <!-- 5th -->
+            <div class="box-container">
+                <div class="box">
+                    <img src="data:image/png;base64,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"alt="">
+                    <h5>2. Getting Started with MySQL</h5>
+                    <button><a href="#" class="btn">Learn More</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>   
+</body>
+
+</html>

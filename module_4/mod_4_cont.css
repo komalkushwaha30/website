@@ -1,0 +1,46 @@
+.module4{
+   background-color: rgb(248, 230, 236);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family:cursive;
+
+}
+.module4 h1{
+    color: black;
+}
+.youtube-module4{
+    margin-top: 3%;
+    
+}
+.module4-border{
+    border-radius: 8px;
+    margin-left: 3%;
+}
+.module4-color{
+    color: blue;
+}
+
+.module4 h6{
+    font-weight:bold;
+    color:rgb(96, 23, 10);
+}
+h2{
+    color: black;
+}
+.module4 h5{
+    color: rgb(11, 11, 27);
+    font-weight: bold;
+    font-size: 28px;
+}
+.module4 p{
+    color: rgb(37, 21, 74);
+}
+.topic_content{
+    background-color: rgb(181, 179, 227);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 20px;
+}

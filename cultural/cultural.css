@@ -1,0 +1,37 @@
+.heading{
+    font-family: "Roboto";
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+.container-fluid{
+    background-image: linear-gradient( #2f4454 , #4e6272,  #667d8f ,#9cb8cd);
+    /* padding: 15px  , 9%; */
+    padding: 40px;
+    
+}
+.body{
+    background-color:rgb(246, 217, 222);
+    padding: 30px;
+    border-radius: 16px;
+    margin: 40px;
+}
+.image{
+    padding: 20px;
+
+}
+.content{
+    padding: 20px;
+    font-size: 19px;
+}
+.recreation{
+    background-color: beige;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 40px;
+}
+.head_part{
+    font-family: "Roboto";
+    padding-top: 10px;
+    font-weight: bold;
+}

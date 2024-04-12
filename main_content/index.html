@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg nav-color fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img height="50px" width="150px"
+                    src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/16084ac6-b55a-4ab6-80d6-666631c2089c.png"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-weight" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-house icon-color"></i>Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-highlighter icon-color" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065zM5.293 13.5 2.5 10.707v1.586L3.707 13.5z" />
+                            </svg>
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/card_module/main_mod.html">All Courses</a></li>
+                            <li><a class="dropdown-item" href="/Module_0/module_0.html">Module 0</a></li>
+                            <li><a class="dropdown-item" href="/module_1/module_1.html">Module 1</a></li>
+                            <li><a class="dropdown-item" href="/module_2a/module_2a.html">Module 2A</a></li>
+                            <li><a class="dropdown-item" href="/module_2B/module_2b.html">Module 2B</a></li>
+                            <li><a class="dropdown-item" href="/module_3/module_3.html">Module 3</a></li>
+                            <li><a class="dropdown-item" href="/module_4/module_4.html">Module 4</a></li>
+                            <li><a class="dropdown-item" href="/module_5a/module_5a.html">Module 5A</a></li>
+                            <li><a class="dropdown-item" href="/module_5B/module_5B.html">Module 5B</a></li>
+                            <li><a class="dropdown-item" href="/module_6A/module_6a.html">Module 6A</a></li>
+                            <li><a class="dropdown-item" href="/module_6B/module_6b.html">Module 6B</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-stopwatch icon-color" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg>
+                            Schedule
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English class [9:00 AM TO 10:00 AM]</a></li>
+                            <li><a class="dropdown-item" href="#">First Coding [10:00 TO 1:00 PM]</a></li>
+                            <li><a class="dropdown-item" href="#">Lunch [1:00 PM TO 2:30 PM]</a></li>
+                            <li><a class="dropdown-item" href="#">Second Coding [2:30 PM TO 5:30 PM]</a></li>
+                            <li><a class="dropdown-item" href="#">Recreation [5:30 PM TO 6:30 PM]</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks Break [6:00 PM TO 6:30 PM]</a></li>
+                            <li><a class="dropdown-item" href="#">Third Coding [6:30 PM TO 8:30 PM]</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-activity icon-color" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2" />
+                            </svg>
+                            Cultural
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#festival">Festivals</a></li>
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#game">Games</a></li>
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#garden">Gardening</a></li>
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#paint">Painting</a></li>
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#kitchen">Kitchen turn </a></li>
+                            <li><a class="dropdown-item" href="/cultural/cultural.html#clean">Campus cleaning</a></li>
+                        </ul>
+                    </li>
+                    <!-- PLACEMENT  -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="fa-solid fa-user-doctor icon-color"></i>
+                            Placements
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Placed student</a></li>
+                            <li><a class="dropdown-item" href="#">Team Visit</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-file-earmark icon-color" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                            </svg>
+                            Policies
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/1qD5p1UZ5MeRxbeJqN_AO8qdi8jlONxzZhD3DMr5mpFs/edit">Attendence
+                                    policy</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/19qF2fZ0Ttz4CcsXvIa_FbgiR_uUWU2MKk5ouvrVUL_Y/edit">Food
+                                    policy</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/1qD5p1UZ5MeRxbeJqN_AO8qdi8jlONxzZhD3DMr5mpFs/edit">Navgurukul
+                                    placement Policy</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/1Mr2Vt1ZkzUzZC55r2aeRidByMIgtBWh-q0z1GT-0se4/edit#heading=h.pehjuz2dc670">Alumni
+                                    Campus staying policy </a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/1mv2ZerAKgRslgrfCtCZxxEtBlIWDzFPZopiSc8C4amY/edit#heading=h.yows8ww5hacy">Placement
+                                    Participation policy</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/document/d/1MC0iIBY0TgQoTzpsB4tt7E2ra5G9B9x9aqMGZrUPslM/edit">Community
+                                    living guidelines policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-coin icon-color" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                            </svg>
+                            Sponsers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://kpmg.com/in/en/home/about/offices/bangalore-embassy-golf-links.html">KPMG</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://jobs.natwestgroup.com/pages/bengaluru">Netwest</a></li>
+                            <li><a class="dropdown-item" href="https://www.accenture.com/in-en">Accenture</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-weight" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-telephone-inbound-fill icon-color" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0" />
+                            </svg>
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">E-mail</a></li>
+                            <li><a class="dropdown-item" href="#">Address</a></li>
+                            <li><a class="dropdown-item" href="#">Number</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-12">
+                <div class="backgroundimg">
+                    <img height="160px" width="400px"
+                         src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/16084ac6-b55a-4ab6-80d6-666631c2089c.png"
+                        alt="">
+
+                    <p class="content_heading">is <span style="color: rgb(224, 76, 18); ">Non-profit</span> organisation to
+                        educate
+                        <span style="color: rgb(224, 76, 18);"><br> a woman</span> is to educate an entire
+                        generation.<br> We
+                        are a non-profit dedicated to<br> bring affordable tech education to<br> underprivileged girls
+                        in
+                        India.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- OUR INITIATIVE -->
+    <div class="our-initiative">
+        <h1 class="text-center our-initiative-heading">Our Initiative</h1>
+        <hr>
+        <div class="containter">
+            <div class="row">
+                <div class="col-sm--12 col-md-6 col-lg-6">
+                    <h5 class="school-margin">School of Programming</h5>
+                    <p class="school-margin">Fully funded one year courses in software enginering with
+                        <br> guranteed jobs.
+                    </p>
+                    <img height="300px" width="500px" class="school-border"
+                        src="https://img.freepik.com/free-photo/friends-learning-study-group_23-2149257214.jpg?t=st=1712725577~exp=1712729177~hmac=8a6963357043d8b4ee1bbce113fb67e6b1019cf849242ac5f7d8a4f16574a0ee&w=900"
+                        alt="">
+                </div>
+                <div class="col-sm--12 col-md-6 col-lg-6 ">
+                    <h5 class="school-margin">School of Desining</h5>
+                    <p class="school-margin">Fully funded one year courses in graphics design with<br>
+                        guranteed jobs.</p>
+                    <img height="300px" width="500px" class="school-border"
+                        src="https://img.freepik.com/free-photo/classmates-having-lunch-together-group-study_23-2149211130.jpg?t=st=1712725494~exp=1712729094~hmac=c260f0ea5da32d03674e348b1cea273d39250d7d9d5331a9ba2a04062affe518&w=900"
+                        alt="">
+                </div>
+                <div class="col-sm--12 col-md-6 col-lg-6">
+                    <h5 class="school-margin">Learn online with meraki</h5>
+                    <p class="school-margin">get start programming in python,English and Typing at the effort of you
+                        home
+                        guranteed jobs.</p>
+                    <img height="300px" width="500px" class="school-border"
+                        src="https://media.istockphoto.com/id/1363276509/photo/teacher-giving-computer-science-lecture-to-diverse-multiethnic-group-of-female-and-male.jpg?s=612x612&w=0&k=20&c=iHDI7pI98XJfh95nFw-wT9L9jYr0IzSBYB53riWOVsk="
+                        alt="">
+                </div>
+                <div class="col-sm--12 col-md-6 col-lg-6 ">
+                    <h5 class="school-margin">Code India Fellowshiip</h5>
+                    <p class="school-margin">Nurture programming in the next in the next generation of india youth with
+                        your expertise
+                        guranteed jobs.</p>
+                    <img height="300px" width="500px" class="school-border"
+                        src="https://prod.wp.cdn.aws.wfu.edu/sites/22/2013/08/computercamp.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>About</p>
+                <a href="https://www.navgurukul.org/about">Our Story</a>
+                <a href="https://www.navgurukul.org/team">Team</a>
+                <a href="https://medium.com/navgurukul">Blogs <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2 icon-color" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg></a>
+                <a>Investor Relations</a>
+            </ul>
+            <ul>
+                <p>Our Initiatives</p>
+                <a href="https://www.navgurukul.org/job-course">Guaranteed Job Courses</a>
+                <a href="https://www.merakilearn.org/pathway/1">Meraki <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2 icon-color" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg></a>
+                <a href="https://www.codeindiafellowship.org/">Code India Fellowships <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2 icon-color" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg></a>
+                <a href="https://www.navgurukul.org/nglabs">NG Labs</a>
+
+            </ul>
+            <ul>
+                <p>Get Involved</p>
+                <a href="https://www.navgurukul.org/partners">Be a Partner</a>
+                <a href="https://www.navgurukul.org/donate">Donate</a>
+                <a href="https://recruiterflow.com/navgurukul/jobs">Careers <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2 icon-color" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/closedform">Volunteer <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2 icon-color" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg></a>
+            </ul>
+            <ul>
+                <p>Learn Online</p>
+                <a href="https://www.merakilearn.org/pathway/1"><img src="data:image/png;base64,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"
+                        alt=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAAAMCAYAAAANvcHWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUeSURBVHgB1VdNduJGEK5uCcysTE4Q+Qb4BIHEYJjN2Ou8F9AJsE9gfALjE8g4L2vbmwz+SVBOEOYEkBOEXYhtdeWrFgLxI7/EmSSTek8gqau6quvnq5La71XbSlGp/829TxnUCGoH7HB7Gj0dhn44oX+YEn1RRMf3/v1wE0/9sjpQTMVnQ77w1IOyx07+zER8miXzX5NWREfE1GoE+0dZTKz5DDzlAukD+heIiQ9En0NRKZOHucREJUXKi9+4LcV84Chq0ydKenFnTspBubjKUA+qLfx59ImRMu6uNrR7599d0/+E3OQGWVIsaFeyu5O8k9JEOE6yhCU4byhfjuUfh30/HKfXCuSW+v5DmPCleapBteTEmTlZlc0ikUkgYkrTCfb36BVkz0W5Mqwei32UcS5UWHETT2z700RslnuXlPceQZd9I8oVE1hb1bHIbFJjHLy9lN063ySb1Wq8apBg/ZZ2R4CYK7lI50b1b2vzwBQo1wVIDeq9WnPOR/muGFHvVUeOpp+hPdgku4kal7UzkWkEexbutnRuIPu//e7Lz+kvUP1yPxB9oju2rzoShy307F0VdO7X2K4FT+KXelD3xA45i/Dae/DKHqxz9llsXdUh8gtnGz5NZfcs+tyyjjamlzb4LTYG1ncV6QnkKlLOeN3Dface7JWXj8cXSPuQDR87xB2JNmRF7lRk5UIGyXNnE4wlDgJGH4ktTK6FDexhec2j3qE/SdYJbFo45zmZp53YbkVw0JWsi35jyJN1Y8yh2KaMOceSl/glIaX5HbOWvnGujDqUbE5sYqYDkbd7xInqvUFPmcNI37+/QIdvKrbZ3SUndwIneXB0RexIKzIOmhC0wLDju1mJIOId0lGTtZImGi58TRe3rYf0pCMwcJHeD33hBlnQFNhZkp05WhwUB11X+n5/TK8kg31QvXTbvJ87rhF8dcNat1MQtbts2578tdno9WYNe2432WOMf+f/EM72L8v+ksjuEhPGJjhrUHByMn20kE3Xt3DmerbGDVNpEwAmzmYa7C/Gse0lTo5+Sj9aLHfzCBaXiZXdh8kUxQlrpB0E3HhSCb+Zx92/M3ZK+eOAMRT0aqPkvbG6Jb+tLUN7Vkc1YVt5Ic2kHLO9suU4K/A6b0YpybnNS84WIEd2h+JoeVbsHm/aTMpenIMSw/pzmF6bCkS8QDaQhm0ps4nONUVDclwJ7tpYqZS6lpKEPs8GiOiUXklxQ81JSCdsHitzHbP/OzS7eCBQAzh6bEx0bG2TJifY+xFIr71BdsufOCMrciqiD/bGcb6QjpxciJ1XmOHWC+TZ/Y0KUWrXEhxA18Z5mqPnD1KqMYSgH1xWX31oqQqcacjWPtdLbI6TI1eO+0U83YBnIrbJOmvapo9E7uqL2aj22UslO6XnboEwqTC3Gj10YQUctmXHaC45aSiZH0gqYmCkKmt8KMF57wA7JQBQUWXwS8ABARV8BwxEH2Q8fO1WKFMBtdD9Wytvx1PztKvQpG3myoQgFYz3gEqpqGLBuHD883CLXFQtlfYva1caIMMbKu61pAEFN4LN6ZfrjrYdFVc+nK/bjKOegTXytYdUlew7/d08deIz8zAtk9B7/6FrJx/GBCJyhnva2GoCrztOZLE+TGTF4VNgNivYyWx7gNiN+1AcZA9CStbCTZeye8WJhO6+o+S80vyhX2NSkqlD1uRc8rE0kymxoaJMLNYWJqtX4EieceobWqHEpu+//vGXtDuFH5Pb8A8y9wiUIbENWwAAAABJRU5ErkJggg=="
+                        alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=org.merakilearn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAYCAYAAAAYl8YPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMgSURBVHgBrZJbSBRRGMf/39z2YrultdSSRpb1UFJU9NRDPQQRBEFvURBBEAQRBkV3IizKCrpq9NCVogsVhSVYkN0MMrMiM9eHVUMUDC+76l5mzpzO6qw7blkq/oc/HGbO/L7v/52DFcHDzmVvT3gwDqKp1ZV3yVO61KmqN929dPR7/uE4xiiS3vGYmvGMlEkVqkNTf2TIrh0/px4sxxhEeM85GKBOvseQ+VGGTHyC5r7lU5U9AfeBltHBPgzAEpZ8pQaf8kbhMqBAinjhKl7AvYUVmQVdI4NVp2DgOof/gY7MGi25wUlqg19yHwh69t/7P6xGwEwLlnTODYaJtXJqE5AJ9yOXpO1p8e4LDA/7auss4QQYfQwzrjNkNGr2zRqUUIbkKHSGp11snb61Lx0miQeQLSv9b0Rct4zGLSp6Z0ftm+MwvJ1mb1Ges7IuFJy5SbRBf8KSQMkCJtakEpo3quiZxew/5LIudrvjYbbHaLqGZu9z3pQ3PxWzzpoZtyKyNJOInHuZw9mq5LJu9rr9NmUjLA0WVVQdDm8RfDmnCPUWLAlMzs2wwcUMs2adYK86ipV889cAyG5ZpFUcZamYdtvnJ9b+7ih9KqhFfmOE9xfk6aMXZ8iiXUNnRtaaUsDJkRB7fOWQntMY0vilhYQuh5nGCcUNnAxHsI0QtMVMszsa4y+KdulLmuo1SRSQJHF8vgijvVUEX4wY4aFp4qg2BzUDp0l/iSnsMmK89PT+2KJggwZOECUhfgRvd8nm+QVt8TjWyRI2JkGwJpO8JIPKCofY1XNFbGmgzmkSDX42OdrjYCUdQeV4zjxEkCbFuiCDQGcsxksunjGWf/3s4AJkDchgHOVhI77b/+VlLYaRNPQOA8Vnz+orq6scXEQTncAw8S3GjLVVnujaf4EGOiOrM9HCqQsl8TXvKjVOEhiZfZzhuKHwS/6a5+0YgfpjJqIdKbmqbygr1xjxqA6zrJP1bMv/XtGGUSjRmbHz5n1z/dNyTSd8MhkVzgyUPsIYJG/OXjy34NqdiSY3j0WJb88LPPmCsepZ3mpHZfaqLIyDfgMeD2nBtfuuGQAAAABJRU5ErkJggg=="
+                        alt="">Now on Playstore</a>
+
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <a href="https://www.facebook.com/navgurukul/"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="svg-background">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F05F40"></rect>
+                    <g clip-path="url(#clip0_432_1637)">
+                        <path
+                            d="M19.5742 17.3508L20.0008 14.5999H17.3335V12.8148C17.3335 12.0623 17.7061 11.3287 18.9007 11.3287H20.1133V8.98663C20.1133 8.98663 19.0129 8.80078 17.9608 8.80078C15.7642 8.80078 14.3284 10.1183 14.3284 12.5034V14.5999H11.8867V17.3508H14.3284V24.0008H17.3335V17.3508H19.5742Z"
+                            fill="#E16749" class="socialmedia-icon"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_432_1637">
+                            <rect width="9.6" height="15.2" fill="white" transform="translate(11.2 8.80078)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg></a>
+            <a href="https://www.linkedin.com/school/navgurukul/"><svg width="32" height="32" viewBox="0 0 32 32"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-background">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F05F40"></rect>
+                    <g clip-path="url(#clip0_432_1634)">
+                        <path
+                            d="M12.0233 22.0016H9.03784V12.6548H12.0233V22.0016ZM10.529 11.3798C9.57431 11.3798 8.79999 10.611 8.79999 9.68289C8.79999 9.23708 8.98215 8.80953 9.30639 8.49429C9.63063 8.17905 10.0704 8.00195 10.529 8.00195C10.9875 8.00195 11.4273 8.17905 11.7515 8.49429C12.0758 8.80953 12.2579 9.23708 12.2579 9.68289C12.2579 10.611 11.4833 11.3798 10.529 11.3798ZM23.1968 22.0016H20.2178V17.4516C20.2178 16.3673 20.1953 14.9766 18.6656 14.9766C17.1134 14.9766 16.8756 16.1548 16.8756 17.3735V22.0016H13.8933V12.6548H16.7566V13.9298H16.7984C17.197 13.1954 18.1706 12.4204 19.6231 12.4204C22.6446 12.4204 23.2 14.3548 23.2 16.8673V22.0016H23.1968Z"
+                            fill="#E16749" class="socialmedia-icon"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_432_1634">
+                            <rect width="14.4" height="16" fill="white" transform="translate(8.79999 8)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg></a>
+            <a href="https://twitter.com/navgurukul"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="svg-background">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#F05F40"></rect>
+                    <g clip-path="url(#clip0_432_1640)">
+                        <path
+                            d="M21.7198 13.2151C21.729 13.3386 21.729 13.4622 21.729 13.5857C21.729 17.3533 18.7594 21.6945 13.332 21.6945C11.6599 21.6945 10.1066 21.2268 8.79999 20.4151C9.03756 20.4416 9.26596 20.4504 9.51268 20.4504C10.8924 20.4504 12.1624 20.0004 13.1766 19.2328C11.8792 19.2063 10.7919 18.3857 10.4172 17.2563C10.6 17.2827 10.7827 17.3004 10.9746 17.3004C11.2396 17.3004 11.5046 17.2651 11.7513 17.2033C10.399 16.9386 9.38474 15.7916 9.38474 14.4063V14.371C9.77762 14.5828 10.2345 14.7151 10.7187 14.7327C9.92381 14.221 9.40302 13.3474 9.40302 12.3592C9.40302 11.8298 9.54918 11.3445 9.80504 10.921C11.2578 12.6504 13.4416 13.7798 15.8903 13.9033C15.8447 13.6916 15.8172 13.471 15.8172 13.2504C15.8172 11.6798 17.133 10.4004 18.7685 10.4004C19.6183 10.4004 20.3858 10.7445 20.9249 11.3004C21.5919 11.1769 22.2314 10.9386 22.798 10.6122C22.5786 11.2739 22.1127 11.8298 21.5005 12.1827C22.0944 12.121 22.6701 11.9621 23.2 11.7416C22.798 12.3063 22.2955 12.8092 21.7198 13.2151Z"
+                            fill="#E16749" class="socialmedia-icon"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_432_1640">
+                            <rect width="14.4" height="12" fill="white" transform="translate(8.79999 10.4004)">
+                            </rect>
+                        </clipPath>
+                    </defs>
+                </svg></a>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <p>Registered as Navgurukul Foundation for Social Welfare</p>
+                <p>CIN Number: U85300HR2016NPL066468</p>
+            </div>
+            <div class="copyright">
+                Let’s talk at <span style="color: rgb(224, 76, 18);">hi@navgurukul.org</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,34 @@
+.module5{
+    background-color: rgb(248, 225, 249);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family:cursive;
+
+}
+.module5 h1{
+    color: black;
+}
+.youtube-module5{
+    margin-top: 3%;
+    
+}
+
+.module5-color{
+    color: blue;
+}
+
+
+.module5 h5{
+    color: rgb(11, 11, 27);
+    font-weight: bold;
+    font-size: 28px;
+}
+.topic_content{
+    background-color: rgb(181, 179, 227);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 20px;
+}
